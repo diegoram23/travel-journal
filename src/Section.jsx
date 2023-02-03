@@ -9,9 +9,9 @@ export default function Section(props) {
             <img className='section--img' src={props.item.imageUrl} />
             <div className='section--text-container'>
                 <div className='section--info'>
-                    <img className='section--icon' src={mapIcon} />
+                    <img className='section--icon' alt={props.item.alt} src={mapIcon} />
                     <h5 className='section--location'>{props.item.location}</h5>
-                    <p className='section--google-link'>View on Google Maps</p>
+                    <a href={props.item.googleMapsUrl} className='section--google-link'>View on Google Maps</a>
                 </div>
                 <h2 className='section--title'>{props.item.title}</h2>
                 <h4 className='section--dates'>{props.item.startDate}-{props.item.endDate}</h4>
