@@ -5,19 +5,18 @@ import data from './data.jsx'
 
 function App() {
 
+  const dataElements = data.map(item => {
+    return (
+      <Section
+        key={item.id}
+        item={item}
+      />
+    )
+  })
   return (
     <div>
-        <Nav />
-        <Section 
-         title = "Mount Fuji"
-         location = "Japan"
-         googleMapsUrl = "https://goo.gl/maps/1DGM5WrWnATgkSNB8"
-         startDate = "12 Jan, 2021"
-         endDate = "24 Jan, 2021"
-         description = "The tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists."
-         imageUrl = "./images/fuji.svg"
-         />
-         <hr />
+      <Nav />
+      {dataElements}
     </div>
   )
 }

@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
   color: #2b283a;
+  min-height: 100vh;
 }
 
 .nav--container {
@@ -33,11 +34,11 @@ body {
     max-width: 550px;
     display: flex;
     margin: 0 auto;
-    /* border: 1px solid green; */
+    align-items: center;
+    border-bottom: 1px solid rgb(185, 185, 185);
   }
 
-  .second-container{
-    /* border: 1px solid red; */
+  .section--text-container{
     padding-left: 18px;
   }
 
@@ -84,7 +85,6 @@ body {
   .section--description {
     font-size: 10px;
     line-height: 15px;
-    /* width: 230px; */
     overflow-wrap: break-word;  }
 
   .section--img {
